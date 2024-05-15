@@ -10,5 +10,10 @@ export default defineConfig(({ mode }) => {
       "process.env.GRAPHCMS_TOKEN": JSON.stringify(env.GRAPHCMS_TOKEN),
     },
     plugins: [react()],
+    server: {
+      host: true,
+      strictPort: true,
+      port: 8000,
+      },
   };
 });
